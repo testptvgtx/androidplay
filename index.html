@@ -424,18 +424,19 @@
     z-index: 2;
   }
   /* สีประจำแต่ละหมวด */
-  .home-card--c1  { --card-accent:#ff6a3d; --card-glow:rgba(255,106,61,0.32);  --card-bg:linear-gradient(150deg,#2a1710,#1a1a1a); }
-  .home-card--c2  { --card-accent:#00d4ff; --card-glow:rgba(0,212,255,0.3);   --card-bg:linear-gradient(150deg,#0e2530,#1a1a1a); }
-  .home-card--c3  { --card-accent:#ff5ec4; --card-glow:rgba(255,94,196,0.3);  --card-bg:linear-gradient(150deg,#251320,#1a1a1a); }
-  .home-card--c4  { --card-accent:#ffd23f; --card-glow:rgba(255,210,63,0.3);  --card-bg:linear-gradient(150deg,#25210f,#1a1a1a); }
-  .home-card--c5  { --card-accent:#3fb2ff; --card-glow:rgba(63,178,255,0.3);  --card-bg:linear-gradient(150deg,#0e1f30,#1a1a1a); }
-  .home-card--c6  { --card-accent:#b98bff; --card-glow:rgba(185,139,255,0.3);--card-bg:linear-gradient(150deg,#1c1526,#1a1a1a); }
+  .home-card--c1  { --card-accent:#ff5470; --card-glow:rgba(255,84,112,0.35); --card-bg:linear-gradient(150deg,#2a1420,#14171f); }
+  .home-card--c2  { --card-accent:#ffb84d; --card-glow:rgba(255,184,77,0.3);  --card-bg:linear-gradient(150deg,#241a10,#14171f); }
+  .home-card--c3  { --card-accent:#ffb84d; --card-glow:rgba(255,184,77,0.3);  --card-bg:linear-gradient(150deg,#241a10,#14171f); }
+  .home-card--c4  { --card-accent:#ffb84d; --card-glow:rgba(255,184,77,0.3);  --card-bg:linear-gradient(150deg,#241a10,#14171f); }
+  .home-card--c5  { --card-accent:#ff5470; --card-glow:rgba(255,84,112,0.35); --card-bg:linear-gradient(150deg,#2a1420,#14171f); }
+  .home-card--c6  { --card-accent:#3fd0ff; --card-glow:rgba(63,208,255,0.35); --card-bg:linear-gradient(150deg,#0e2430,#0d0e12); }
   .home-card--c7  { --card-accent:#ff5470; --card-glow:rgba(255,84,112,0.3); --card-bg:linear-gradient(150deg,#2a1420,#1a1a1a); }
-  .home-card--c8  { --card-accent:#ffb84d; --card-glow:rgba(255,184,77,0.3); --card-bg:linear-gradient(150deg,#241a10,#1a1a1a); }
+  .home-card--c8  { --card-accent:#ff5ec4; --card-glow:rgba(255,94,196,0.35); --card-bg:linear-gradient(150deg,#241127,#14171f); }
   .home-card--c9  { --card-accent:#2ee6b8; --card-glow:rgba(46,230,184,0.3); --card-bg:linear-gradient(150deg,#0d241d,#1a1a1a); }
-  .home-card--c10 { --card-accent:#8b7bff; --card-glow:rgba(139,123,255,0.3);--card-bg:linear-gradient(150deg,#181528,#1a1a1a); }
-  .home-card--c11 { --card-accent:#7fd8ff; --card-glow:rgba(127,216,255,0.3);--card-bg:linear-gradient(150deg,#0f2229,#1a1a1a); }
-
+  .home-card--c10 { --card-accent:#8bd9ff; --card-glow:rgba(139,217,255,0.3); --card-bg:linear-gradient(150deg,#131f26,#14171f); }
+  .home-card--c11 { --card-accent:#ffd8a8; --card-glow:rgba(255,216,168,0.3); --card-bg:linear-gradient(150deg,#221c14,#14171f); }
+  .home-card--c12 { --card-accent:#ff5ec4; --card-glow:rgba(255,94,196,0.35); --card-bg:linear-gradient(150deg,#241127,#14171f); }
+  
   #topbarHome {
     cursor: pointer;
     transition: color 0.15s;
@@ -616,7 +617,7 @@ HOME SCREEN - หน้าแรก (กริดหมวดหมู่)
 <div id="homeScreen">
   <div class="home-header">
     <div class="home-logo">
-      <div class="logo gradient-logo">🍿📺 PLAYBOX</div>
+      <div class="logo gradient-logo">📺 PLAYBOX</div>
       <div class="sub">Thailand Beta.By NETI</div>
     </div>
     <div class="home-topbar" id="homeTopbar">
@@ -637,41 +638,57 @@ HOME SCREEN - หน้าแรก (กริดหมวดหมู่)
 
   <!-- กริดหมวดหมู่: data-cat ตรงกับ key ใน categories{} เดิมในไฟล์ js ทุกตัว -->
   <div class="home-grid" id="homeGrid">
-    <div class="home-card home-card--c1" data-cat="ภาพยนต์" tabindex="0">
-      <div class="home-card__body"><span class="home-card__icon">🎬</span></div>
-      <span class="home-card__label">ภาพยนต์</span>
-    </div>
-    <div class="home-card home-card--c2" data-cat="ดิจิตอลทีวี" tabindex="0">
-      <div class="home-card__body"><span class="home-card__icon">📡</span></div>
+    <div class="home-card home-card--c1" data-cat="ดิจิตอลทีวี" tabindex="0">
+      <div class="home-card__body"><span class="home-card__icon">📺</span></div>
       <span class="home-card__label">ดิจิตอลทีวี</span>
     </div>
-    <div class="home-card home-card--c3" data-cat="การ์ตูน" tabindex="0">
+    <div class="home-card home-card--c2" data-cat="ภาพยนต์" tabindex="0">
+      <div class="home-card__body"><span class="home-card__icon">🍿</span></div>
+      <span class="home-card__label">ภาพยนต์</span>
+    </div>
+    <div class="home-card home-card--c3" data-cat="ดูหนังใหม่" tabindex="0">
+      <div class="home-card__body"><span class="home-card__icon">🎬</span></div>
+      <span class="home-card__label">ดูหนังใหม่</span>
+           </div>
+            <div class="home-card home-card--c4" data-cat="ดูหนังใหม่" data-label="Ultra-HD 4K">
+                <div class="home-card__body"><span class="home-card__icon">4K</span></div>
+                <span class="home-card__label">Ultra-HD</span>
+            </div>
+
+            <div class="home-card home-card--c5" data-cat="กีฬาไทย" data-label="กีฬาไทย">
+                <div class="home-card__body">
+                    <span class="home-card__icon">
+                        <!-- ใช้ SVG ธงชาติแทนอิโมจิ 🇹🇭 เพราะเบราว์เซอร์ของกล่องแอนดรอยหลายรุ่นไม่รองรับอิโมจิธงชาติ
+                             (จะกลายเป็นตัวอักษร "TH" แทน ตามที่เห็นในภาพ) -->
+                        <svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="20" fill="#ffffff"/>
+                            <rect width="30" height="4" fill="#a51931"/>
+                            <rect y="16" width="30" height="4" fill="#a51931"/>
+                            <rect y="6.5" width="30" height="7" fill="#2d2a4a"/>
+                        </svg>
+                    </span>
+                </div>
+                <span class="home-card__label">กีฬาไทย</span>
+            </div>
+    <div class="home-card home-card--c6" data-cat="กีฬาต่างประเทศ" tabindex="0">
+      <div class="home-card__body"><span class="home-card__icon">🌐</span></div>
+      <span class="home-card__label">กีฬาต่างประเทศ</span>
+    </div>
+    <div class="home-card home-card--c9" data-cat="บอลโลก" tabindex="0">
+      <div class="home-card__body"><span class="home-card__icon">⚽</span></div>
+      <span class="home-card__label">บอลโลก</span>
+	      </div>
+ <div class="home-card home-card--c8" data-cat="การ์ตูน" tabindex="0">
       <div class="home-card__body"><span class="home-card__icon">🎨</span></div>
       <span class="home-card__label">การ์ตูน</span>
     </div>
-    <div class="home-card home-card--c4" data-cat="กีฬาไทย" tabindex="0">
-      <div class="home-card__body"><span class="home-card__icon">🏅</span></div>
-      <span class="home-card__label">กีฬาไทย</span>
-    </div>
-    <div class="home-card home-card--c5" data-cat="กีฬาต่างประเทศ" tabindex="0">
-      <div class="home-card__body"><span class="home-card__icon">🏆</span></div>
-      <span class="home-card__label">กีฬาต่างประเทศ</span>
-    </div>
-    <div class="home-card home-card--c6" data-cat="สารคดี" tabindex="0">
-      <div class="home-card__body"><span class="home-card__icon">🔭</span></div>
+    <div class="home-card home-card--c12" data-cat="สารคดี" tabindex="0">
+      <div class="home-card__body"><span class="home-card__icon">🎓</span></div>
       <span class="home-card__label">สารคดี</span>
     </div>
     <div class="home-card home-card--c7" data-cat="NEWS" tabindex="0">
       <div class="home-card__body"><span class="home-card__icon">📰</span></div>
       <span class="home-card__label">NEWS</span>
-    </div>
-    <div class="home-card home-card--c8" data-cat="ดูหนังใหม่" tabindex="0">
-      <div class="home-card__body"><span class="home-card__icon">⏪</span></div>
-      <span class="home-card__label">ดูหนังใหม่</span>
-    </div>
-    <div class="home-card home-card--c9" data-cat="บอลโลก" tabindex="0">
-      <div class="home-card__body"><span class="home-card__icon">⚽</span></div>
-      <span class="home-card__label">บอลโลก</span>
     </div>
     <div class="home-card home-card--c10" data-cat="ตารางแข่งขัน" tabindex="0">
       <div class="home-card__body"><span class="home-card__icon">🧩</span></div>
@@ -692,10 +709,17 @@ PLAYER VIEW - หน้าเล่นช่อง (ซ่อนไว้ก่�
 <!-- SIDEBAR -->
 <nav id="sidebar" role="navigation" aria-label="หมวดหมู่">
   <div id="sidebar-header">
-    <div class="logo">🍿⃢📺💃PLAYBOX</div>
+    <div class="logo">⃢📺PLAYBOX</div>
     <div class="sub">Thailand Beta.By NETI</div>
   </div>
 
+<!-- MAIN -->
+<div id="main">
+  <!-- Top bar -->
+  <div id="topbar">
+    <span id="topbarHome">🏠 หน้าแรก</span>
+    <span class="sep">›</span>
+	  </div>
   <div class="menu-item active" data-cat="ภาพยนต์" tabindex="0">
     <span class="icon">🎬</span> ภาพยนต์
   </div>
